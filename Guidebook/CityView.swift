@@ -25,6 +25,7 @@ struct CityView: View {
                             AttractionView(city: city)
                         } label: {
                             CityCard(city: city)
+                                .padding(.bottom, 20)
                         }
 
                         
@@ -32,10 +33,9 @@ struct CityView: View {
                     }
                 }
             }
-            .padding()
+            .padding(.horizontal)
         }
-        
-        
+        .ignoresSafeArea()
         .onAppear {
             cities = dataService.getData()
         }
