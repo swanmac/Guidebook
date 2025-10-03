@@ -16,7 +16,7 @@ struct CityView: View {
         
         NavigationStack {
             
-            ScrollView {
+            ScrollView (showsIndicators: false){
                 VStack {
                     
                     ForEach(cities) { city in
