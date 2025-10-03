@@ -15,8 +15,13 @@ struct CityCard: View {
         
         ZStack {
             
-            Image(city.imageName)
-                .resizable()
+            Rectangle()
+                .background(content: {
+                    Image(city.imageName)
+                        .resizable()
+                        .aspectRatio(contentMode: .fill)
+                })
+                .foregroundStyle(.clear)
                 .cornerRadius(15)
             
             Rectangle()
@@ -32,6 +37,7 @@ struct CityCard: View {
                 Spacer()
                 
                 Text(city.summary)
+                    .multilineTextAlignment(.leading)
             }
             .padding()
             .foregroundStyle(.white)
