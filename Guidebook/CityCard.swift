@@ -15,6 +15,10 @@ struct CityCard: View {
         
         ZStack {
             
+            Image(city.imageName)
+                .resizable()
+                .cornerRadius(15)
+            
             Rectangle()
                 .foregroundStyle(.black)
                 .opacity(0.5)
@@ -24,7 +28,6 @@ struct CityCard: View {
                 Text(city.name)
                     .font(.largeTitle)
                     .bold()
-                    
                 
                 Spacer()
                 
