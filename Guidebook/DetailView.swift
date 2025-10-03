@@ -11,11 +11,13 @@ struct DetailView: View {
     
     var attraction: Attraction
     
-    var body: some View{
+    var body: some View {
         
         ScrollView {
             Image(attraction.imageName)
-            Text("Hello, World")
+                .resizable()
+            Text(attraction.name)
+            Text(attraction.longDescription)
         }
     }
 }
