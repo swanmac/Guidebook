@@ -30,6 +30,7 @@ struct CityCard: View {
                 
                 Text(city.summary)
             }
+            .padding()
             .foregroundStyle(.white)
             
         }
