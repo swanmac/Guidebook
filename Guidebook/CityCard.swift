@@ -20,9 +20,22 @@ struct CityCard: View {
                 .opacity(0.5)
                 .cornerRadius(15)
             
+            VStack (alignment: .leading){
+                Text(city.name)
+                    .font(.largeTitle)
+                    .bold()
+                    
+                
+                Spacer()
+                
+                Text(city.summary)
+            }
+            .foregroundStyle(.white)
+            
         }
-        
+        .frame(height: 400)
     }
+        
     
 }
 #Preview {
