@@ -19,7 +19,7 @@ struct AttractionRow: View {
                 .resizable()
                 .aspectRatio(contentMode: .fill)
                 .frame(height:120)
-                cornerRadius(15)
+                .cornerRadius(15)
                 
             Text(attraction.name)
                 .bold()
