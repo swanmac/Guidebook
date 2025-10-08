@@ -29,7 +29,7 @@ struct DetailView: View {
                         .multilineTextAlignment(.leading)
                     
                     // Create URL instance based on URL Scheme
-                    if let url = URL(string: "maps//?q=\(cleanName(name: attraction.name))&sll=\(cleanCoords(latLong: attraction.latLong))&z=10&t=s") {
+                    if let url = URL(string: "maps://?q=\(cleanName(name: attraction.name))&sll=\(cleanCoords(latLong: attraction.latLong))&z=10&t=s") {
                         
                         // Test if URL can be opened
                         if UIApplication.shared.canOpenURL(url) {
