@@ -46,6 +46,7 @@ struct DetailView: View {
                                         .foregroundStyle(.blue)
                                         .frame(height: 40)
                                     Text("Get Directions")
+                                        .foregroundStyle(.white)
                                 }
                             }
                         }
